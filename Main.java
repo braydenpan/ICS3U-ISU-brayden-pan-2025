@@ -2,8 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String category;
+        String category = "";
         boolean validInput = false;
+        int iPhoneStock = 10;
+        int swiftStock = 50;
+        int legionStock = 20;
+        int quantity;
         System.out.println("Welcome to Walmarket.");
         System.out.println("Categories:");
         while(!validInput) {
@@ -38,6 +42,31 @@ public class Main {
                 default:
                     System.out.println("Invalid input");
                     System.out.println("Please select a valid category");
+            }
+        }
+        if(category.equalsIgnoreCase("electronics")){
+            System.out.println("Electronics");
+            System.out.println("Items");
+            System.out.println("\t Apple iPhone 16 Pro Max 512 GB \t $2049.99");
+            System.out.println("\t\t selection id: iPhone");
+            System.out.println("\t Acer Swift 5 \t $1499.99");
+            System.out.println("\t\t selection id: Swift");
+            System.out.println("\t Lenovo Legion Intel i7 GTX 1650 1TB Prebuilt PC \t $2499.99");
+            System.out.println("\t\t selection id: Legion");
+            System.out.println("Enter selection id or desired category");
+            if(category.equalsIgnoreCase("iPhone") || category.equalsIgnoreCase("Swift") || category.equalsIgnoreCase("Legion")){
+                System.out.println("Enter desired quantity");
+                quantity = sc.nextInt();
+                // Need to work on the below sections to actually add the quantities to cart, is only text rn not an actual action
+                if(category.equalsIgnoreCase("iPhone") && quantity <= iPhoneStock && quantity > 0){
+                    System.out.println("Added " + quantity + "to cart.");
+                }else if (category.equalsIgnoreCase("Swift") && quantity <= swiftStock && quantity > 0){
+                    System.out.println("Added " + quantity + "to cart.");
+                }else if(category.equalsIgnoreCase("Legion") && quantity <= legionStock && quantity > 0){
+                    System.out.println("Added " + quantity + "to cart.");
+                }else{
+                    System.out.println("Invalid Quantity");
+                }
             }
         }
     }
