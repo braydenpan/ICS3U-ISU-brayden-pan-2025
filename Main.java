@@ -54,6 +54,7 @@ public class Main {
             System.out.println("\t Lenovo Legion Intel i7 GTX 1650 1TB Prebuilt PC \t $2499.99");
             System.out.println("\t\t selection id: Legion");
             System.out.println("Enter selection id or desired category");
+            category = sc.nextLine();
             if(category.equalsIgnoreCase("iPhone") || category.equalsIgnoreCase("Swift") || category.equalsIgnoreCase("Legion")){
                 System.out.println("Enter desired quantity");
                 quantity = sc.nextInt();
