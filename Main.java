@@ -7,6 +7,7 @@ public class Main {
         ArrayList<Integer> quantityList = new ArrayList<>();
         String category = "homepage";
         String selectionID;
+        int subtotal = 0;
         boolean validInput;
         int iPhoneStock = 10;
         int swiftStock = 50;
@@ -72,14 +73,16 @@ public class Main {
                 if (selectionID.equalsIgnoreCase("iPhone") || selectionID.equalsIgnoreCase("Swift") || selectionID.equalsIgnoreCase("Legion")) {
                     System.out.println("Enter desired quantity");
                     quantity = sc.nextInt();
-                    if (selectionID.equalsIgnoreCase("iPhone") && quantity <= iPhoneStock && quantity > 0) {
+                    if (selectionID.equalsIgnoreCase("iPhone") && quantity <= 10 && quantity > 0) {
                         System.out.println("Added " + quantity + " iPhone 16 Pro Max to cart.");
                         itemList.add("iPhone 16 Pro Max");
                         quantityList.add(quantity);
+                        subtotal += 204999 * quantity;
                     } else if (selectionID.equalsIgnoreCase("Swift") && quantity <= swiftStock && quantity > 0) {
                         System.out.println("Added " + quantity + " Acer Swift 5 to cart.");
                         itemList.add("Acer Swift 5");
                         quantityList.add(quantity);
+                        subtotal += 149999 * quantity;
                     } else if (selectionID.equalsIgnoreCase("Legion") && quantity <= legionStock && quantity > 0) {
                         System.out.println("Added " + quantity + " Lenovo Legion PC to cart.");
                         itemList.add("Lenovo Legion PC");
@@ -92,8 +95,8 @@ public class Main {
                 }
                 //Code below displays the cart after the order
                 System.out.println("Your cart contains: ");
+                System.out.println();
                 for(int i = 0;i < itemList.size();i++){
-                    System.out.println();
                     System.out.println(itemList.get(i) + " (" + quantityList.get(i) + ")" + ", ");
                 }
                 System.out.println("Where would you like to go now?");
@@ -152,8 +155,8 @@ public class Main {
                     System.out.println("Invalid selection");
                 }
                 System.out.println("Your cart contains: ");
+                System.out.println();
                 for(int i = 0;i < itemList.size();i++){
-                    System.out.println();
                     System.out.println(itemList.get(i) + " (" + quantityList.get(i) + ")" + ", ");
                 }
                 System.out.println("Where would you like to go now?");
@@ -212,8 +215,8 @@ public class Main {
                     System.out.println("Invalid selection");
                 }
                 System.out.println("Your cart contains: ");
+                System.out.println();
                 for(int i = 0;i < itemList.size();i++){
-                    System.out.println();
                     System.out.println(itemList.get(i) + " (" + quantityList.get(i) + ")" + ", ");
                 }
                 System.out.println("Where would you like to go now?");
@@ -272,10 +275,70 @@ public class Main {
                     System.out.println("Invalid selection");
                 }
                 System.out.println("Your cart contains: ");
+                System.out.println();
                 for(int i = 0;i < itemList.size();i++){
-                    System.out.println();
                     System.out.println(itemList.get(i) + " (" + quantityList.get(i) + ")" + ", ");
+                }
+                System.out.println("Where would you like to go now?");
+                System.out.println("\t - Homepage \n \t - Electronics \n \t - Decor \n \t - Books \n \t - Music \n \t - Sports");
+                sc.nextLine();
+                category = sc.nextLine();
+                switch (category.toLowerCase()) {
+                    case "homepage":
+                    case "electronics":
+                    case "decor":
+                    case "books":
+                    case "music":
+                    case "sports":
+                        System.out.println("Redirecting you to " + category);
+                        break;
+                    default:
+                        System.out.println("Invalid input");
+                        System.out.println("Redirecting you to Home Page");
+                        category = "homepage";
+                        break;
 
+                }
+            }if(category.equalsIgnoreCase("sports")){
+                System.out.println("Sports");
+                System.out.println("Items");
+                System.out.println();
+                System.out.println("\t Yonex Astrox 100 Game Badminton Racquet \t $149.99 \t 50 in Stock");
+                System.out.println("\t\t selection id: 100game");
+                System.out.println();
+                System.out.println("\t Spalding NBA Indoor Basketball \t $59.99 \t 100 in Stock");
+                System.out.println("\t\t selection id: spaldingball");
+                System.out.println();
+                System.out.println("\t Mikasa v360w Indoor Volleyball \t $34.99 \t 100 in Stock");
+                System.out.println("\t\t selection id: mikasa");
+                System.out.println();
+                System.out.println("Enter selection id");
+                selectionID = sc.nextLine();
+                if(selectionID.equalsIgnoreCase("100game")|| selectionID.equalsIgnoreCase("spaldingball") || selectionID.equalsIgnoreCase("mikasa")){
+                    System.out.println("Enter desired quantity");
+                    quantity = sc.nextInt();
+                    if(selectionID.equalsIgnoreCase("100game") && quantity <= 50){
+                        System.out.println("Added " + quantity + " Astrox 100 Game to cart.");
+                        itemList.add("Astrox 100 Game");
+                        quantityList.add(quantity);
+                    }else if(selectionID.equalsIgnoreCase("spaldingball") && quantity <= 100){
+                        System.out.println("Added " + quantity + " Spalding Indoor Basketball to cart.");
+                        itemList.add("Spalding Indoor Basketball");
+                        quantityList.add(quantity);
+                    }else if(selectionID.equalsIgnoreCase("mikasa") && quantity <= 100){
+                        System.out.println("Added " + quantity + " Mikasa v360w Volleyball to cart.");
+                        itemList.add("Mikasa v360w Volleyball");
+                        quantityList.add(quantity);
+                    }else{
+                        System.out.println("Invalid Quantity");
+                    }
+                }else{
+                    System.out.println("Invalid selection");
+                }
+                System.out.println("Your cart contains: ");
+                System.out.println();
+                for(int i = 0;i < itemList.size();i++){
+                    System.out.println(itemList.get(i) + " (" + quantityList.get(i) + ")" + ", ");
                 }
                 System.out.println("Where would you like to go now?");
                 System.out.println("\t - Homepage \n \t - Electronics \n \t - Decor \n \t - Books \n \t - Music \n \t - Sports");
