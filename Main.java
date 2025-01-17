@@ -836,9 +836,11 @@ public class Main {
                         }
                     }
                     System.out.println("Edit Completed.");
+                    System.out.println("Logging out...");
                     System.out.println("Redirecting you to homepage");
                 }else{
                     System.out.println("Wrong Password");
+                    System.out.println("Logging out...");
                     System.out.println("Redirecting you to the Homepage");
                 }
                 //Redirects the user to homepage
