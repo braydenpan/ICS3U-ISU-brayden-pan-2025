@@ -73,4 +73,4 @@ The admin can then choose to edit the status of specific order, whether shipped 
 ### 8. Exit Program
 After choosing to exit the program, the program displays a farewell message, and breaks the loop, ending the program.
 ### 9. Menu Options
-There is aa menu that appears after every selection, that looks very similar to the homepage, and prompts the user similarly. If the user does not enter a valid category, it redirects them to the homepage.
+There is a menu that appears after every selection, that looks very similar to the homepage, and prompts the user similarly. If the user does not enter a valid category, it redirects them to the homepage.
