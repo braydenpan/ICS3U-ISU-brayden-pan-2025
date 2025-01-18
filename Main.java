@@ -103,7 +103,7 @@ public class Main {
                 System.out.println("Items");
                 System.out.println("\t Apple iPhone 16 Pro Max 512 GB \t $2049.99");
                 if(iPhoneStock > 0){
-                    System.out.print( "\t " + iPhoneStock +  "in Stock");
+                    System.out.print( "\t " + iPhoneStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -111,7 +111,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Acer Swift 5 \t $1499.99");
                 if(swiftStock > 0){
-                    System.out.print( "\t " + swiftStock +  "in Stock");
+                    System.out.print( "\t " + swiftStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -119,7 +119,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Lenovo Legion Intel i7 GTX 1650 1TB Prebuilt PC \t $2499.99");
                 if(legionStock > 0){
-                    System.out.print( "\t " + legionStock +  "in Stock");
+                    System.out.print( "\t " + legionStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -174,7 +174,7 @@ public class Main {
                 System.out.println("Items");
                 System.out.println("\t Black Oak Bedside Table \t $199.99");
                 if(bedsideStock > 0){
-                    System.out.print( "\t " + bedsideStock +  "in Stock");
+                    System.out.print( "\t " + bedsideStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -182,7 +182,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Oval Vertical Mirror - Silver \t $59.99");
                 if(mirrorStock > 0){
-                    System.out.print( "\t " + mirrorStock +  "in Stock");
+                    System.out.print( "\t " + mirrorStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -190,7 +190,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t LED Table Lamp \t $29.99");
                 if(lampStock > 0){
-                    System.out.print( "\t " + lampStock +  "in Stock");
+                    System.out.print( "\t " + lampStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -244,7 +244,7 @@ public class Main {
                 System.out.println("Items");
                 System.out.println("\t Java for Dummies \t $19.99");
                 if(javaDummiesStock > 0){
-                    System.out.print( "\t " + javaDummiesStock +  "in Stock");
+                    System.out.print( "\t " + javaDummiesStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -252,7 +252,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t The Hobbit \t $29.99");
                 if(hobbitStock > 0){
-                    System.out.print( "\t " + hobbitStock +  "in Stock");
+                    System.out.print( "\t " + hobbitStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -260,7 +260,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t 1984 \t $9.99");
                 if(nineteenStock > 0){
-                    System.out.print( "\t " + nineteenStock +  "in Stock");
+                    System.out.print( "\t " + nineteenStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -313,7 +313,7 @@ public class Main {
                 System.out.println("Items");
                 System.out.println("\t 4 Your Eyez Only - J.Cole \t $19.99");
                 if(eyezOnlyStock > 0){
-                    System.out.print( "\t " + eyezOnlyStock +  "in Stock");
+                    System.out.print( "\t " + eyezOnlyStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -321,7 +321,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Bewitched - Laufey (Vinyl) \t 29.99");
                 if(bewitchedStock > 0){
-                    System.out.print( "\t " + bewitchedStock +  "in Stock");
+                    System.out.print( "\t " + bewitchedStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -329,7 +329,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Get Up - NewJeans \t 19.99");
                 if(getUpStock > 0){
-                    System.out.print( "\t " + getUpStock+  "in Stock");
+                    System.out.print( "\t " + getUpStock+  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -383,7 +383,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Yonex Astrox 100 Game Badminton Racquet \t $149.99");
                 if(astroxStock > 0){
-                    System.out.print( "\t " + astroxStock +  "in Stock");
+                    System.out.print( "\t " + astroxStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -391,7 +391,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Spalding NBA Indoor Basketball \t $59.99");
                 if(spaldingStock > 0){
-                    System.out.print( "\t " + spaldingStock +  "in Stock");
+                    System.out.print( "\t " + spaldingStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
@@ -399,7 +399,7 @@ public class Main {
                 System.out.println();
                 System.out.println("\t Mikasa v360w Indoor Volleyball \t $34.99 \t 100 in Stock");
                 if(mikasaStock > 0){
-                    System.out.print( "\t " + mikasaStock +  "in Stock");
+                    System.out.print( "\t " + mikasaStock +  " in Stock");
                 }else{
                     System.out.print(" \t (Out of Stock)");
                 }
