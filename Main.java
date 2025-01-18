@@ -17,7 +17,7 @@ public class Main {
         String input;
         String input2;
         String password = "walmarketAdmin123";
-        double subtotal2 = 0.0;
+        double subtotal = 0.0;
         boolean validInput;
         boolean completedOrder = false;
         boolean reiteration = false;
@@ -726,69 +726,69 @@ public class Main {
                         switch (input.toLowerCase()) {
                             case "iphone16":
                                 System.out.println("iPhone 16 Pro Max 512 GB: " + quantity + " $" + Math.round(quantity*2049.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*2049.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*2049.99*100.0)/100.0;
                                 break;
                             case "acerswift5":
                                 System.out.println("Acer Swift 5: " + quantity + " $" + Math.round(quantity*1499.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*1499.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*1499.99*100.0)/100.0;
                                 break;
                             case "lenovolegionpc":
                                 System.out.println("Lenovo Legion PC: " + quantity + " $" + Math.round(quantity*2499.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*2499.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*2499.99*100.0)/100.0;
                                 break;
                             case "bedsidetable":
                                 System.out.println("Bedside Table: " + quantity + " $" + Math.round(quantity*199.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*199.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*199.99*100.0)/100.0;
                                 break;
                             case "ovalmirror":
                                 System.out.println("Oval Mirror (Silver): " + quantity + " $" + Math.round(quantity*59.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*59.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*59.99*100.0)/100.0;
                                 break;
                             case "tablelamp":
                                 System.out.println("LED Table Lamp: " + quantity + " $" + Math.round(quantity*29.99*100.0)/100.0);
-                                subtotal2 += Math.round(quantity*29.99*100.0)/100.0;
+                                subtotal += Math.round(quantity*29.99*100.0)/100.0;
                                 break;
                             case "javafordummies":
                                 System.out.println("Java For Dummies: " + quantity + " $" +  Math.round(quantity*19.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*19.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*19.99*100.0)/100.0;
                                 break;
                             case "thehobbit":
                                 System.out.println("The Hobbit: " + quantity + " $" +  Math.round(quantity*29.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*29.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*29.99*100.0)/100.0;
                                 break;
                             case "1984":
                                 System.out.println("1984: " + quantity + " $" +  Math.round(quantity*9.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*9.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*9.99*100.0)/100.0;
                                 break;
                             case "4youreyezonly":
                                 System.out.println("4 Your Eyez Only - J.Cole: " + quantity + " $" +  Math.round(quantity*19.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*19.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*19.99*100.0)/100.0;
                                 break;
                             case "getup":
                                 System.out.println("Get Up - NewJeans: " + quantity + " $" +  Math.round(quantity*19.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*19.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*19.99*100.0)/100.0;
                                 break;
                             case "bewitched":
                                 System.out.println("Bewitched (Vinyl) - Laufey: " + quantity + " $" +  Math.round(quantity*29.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*29.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*29.99*100.0)/100.0;
                                 break;
                             case "astrox100game":
                                 System.out.println("Astrox 100 Game: " + quantity + " $" +  Math.round(quantity*149.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*149.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*149.99*100.0)/100.0;
                                 break;
                             case "spaldingbasketball":
                                 System.out.println("Spalding Indoor Basketball: " + quantity + " $" +  Math.round(quantity*59.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*59.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*59.99*100.0)/100.0;
                                 break;
                             case "mikasavolleyball":
                                 System.out.println("Mikasa v360w Volleyball: " + quantity + " $" +  Math.round(quantity*34.99*100.0)/100.0);
-                                subtotal2 +=  Math.round(quantity*34.99*100.0)/100.0;
+                                subtotal +=  Math.round(quantity*34.99*100.0)/100.0;
                                 break;
                         }
                     }
                     //This is the checkout stage,where it displays their subtotal and total after tax.
-                    System.out.println("Your subtotal is: $" + Math.round(subtotal2*100.0)/100.0);
-                    System.out.println("Your total is: $" +  Math.round(subtotal2 * 1.13*100.0)/100.0);
+                    System.out.println("Your subtotal is: $" + Math.round(subtotal*100.0)/100.0);
+                    System.out.println("Your total is: $" +  Math.round(subtotal * 1.13*100.0)/100.0);
                     System.out.println("Would you like to confirm your order?(Y/N)");
                     input = sc.nextLine();
                     if(input.equalsIgnoreCase("y")){
@@ -859,7 +859,7 @@ public class Main {
                     order += (itemList.get(i) + ", (" + quantityList.get(i) + "), ");
                 }
                 //Adds the total of the order to said string.
-                order += "(" + Math.round(subtotal2 * 1.13*100.0)/100.0 + ")";
+                order += "(" + Math.round(subtotal * 1.13*100.0)/100.0 + ")";
                 //Adds the cart to an arraylist of orders, as well as adds the "not shipped" status to a seperate arraylist.
                 orderList.add(order);
                 shippedList.add("notshipped");
