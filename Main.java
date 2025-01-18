@@ -15,7 +15,8 @@ public class Main {
         String category = "homepage";
         String selectionID;
         String input;
-        String password = "a100wouldbereallycool";
+        String input2;
+        String password = "walmarketAdmin123";
         double subtotal2 = 0.0;
         boolean validInput;
         boolean completedOrder = false;
@@ -819,16 +820,17 @@ public class Main {
                         quantity = sc.nextInt();
                         if(quantity < orderList.size()){
                             System.out.println("This order is " + shippedList.get(quantity));
+                            sc.nextLine();
                             System.out.println("Would you like to change the status of an order?(Y/N)");
-                            input = sc.nextLine();
+                            input2 = sc.nextLine();
                             //The block below changes the status of the desired order.
-                            if(input.equalsIgnoreCase("y")){
-                                if(shippedList.get(quantity).equals("not shipped")){
-                                    shippedList.set(quantity, "shipped");
+                            if(input2.equalsIgnoreCase("y")){
+                                if(shippedList.get(quantity).equals("shipped")){
+                                    shippedList.set(quantity, "notshipped");
                                 }else{
-                                    shippedList.set(quantity, "not shipped");
+                                    shippedList.set(quantity, "shipped");
                                 }
-                            }else if(input.equalsIgnoreCase("n")){
+                            }else if(input2.equalsIgnoreCase("n")){
                                 System.out.println("You have chosen to not edit this order.");
                             }
                         }else{
@@ -860,7 +862,7 @@ public class Main {
                 order += "(" + Math.round(subtotal2 * 1.13*100.0)/100.0 + ")";
                 //Adds the cart to an arraylist of orders, as well as adds the "not shipped" status to a seperate arraylist.
                 orderList.add(order);
-                shippedList.add("not shipped");
+                shippedList.add("notshipped");
                 //Clears the string and the cart, as well as resets the completedOrder status
                 order = "";
                 itemList.clear();
@@ -868,7 +870,7 @@ public class Main {
                 completedOrder = false;
             }
             if(category.equalsIgnoreCase("electronics") || category.equalsIgnoreCase("decor") || category.equalsIgnoreCase("books") || category.equalsIgnoreCase("music") || category.equalsIgnoreCase("sports")) {
-                //Updates the user oon their cart contents
+                //Updates the user on their cart contents
                 System.out.println("Your cart contains: ");
                 System.out.println();
                 for (int i = 0; i < itemList.size(); i++) {
